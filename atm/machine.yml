@@ -12,13 +12,13 @@ banknotes:
 accounts:
   1:
     user: Yegor
-    password: koko
-    balance: 0
+    password: pass
+    balance: 1350
   2:
     user: Michael
-    password: grass
+    password: lokolo
     balance: 360
   3:
     user: Alex
-    password: milk
-    balance: 25
+    password: avocado
+    balance: 720

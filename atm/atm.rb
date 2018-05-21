@@ -28,7 +28,6 @@ password = gets.chomp.to_s
 if password == true_password
   puts "\nHello #{user}!\nYour balance is #{balance}$"
   until check > 0
-    puts hash
     if @sum_of_banknotes == 0
       puts "\nTerminal has no money..."
     end
