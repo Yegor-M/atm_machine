@@ -1,0 +1,24 @@
+---
+banknotes:
+  500: 3
+  200: 0
+  100: 2
+  50: 1
+  20: 2
+  10: 4
+  5: 1
+  2: 0
+  1: 2
+accounts:
+  1:
+    user: Yegor
+    password: koko
+    balance: 0
+  2:
+    user: Michael
+    password: grass
+    balance: 360
+  3:
+    user: Alex
+    password: milk
+    balance: 25
