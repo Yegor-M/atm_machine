@@ -32,17 +32,19 @@ end
 def registered_user
   banknote_validate
   @user = @hash['accounts'][@n]['user']
-  puts "\nHello #{@user}!\nYour balance is #{@balance}$"
+  puts "\nHello #{@user}!\nYour balance is $#{@balance}"
   until @check > 0
     if @sum_of_banknotes <= 0
       puts "\nTerminal has no money..."
       return
     end
-    puts "\nChoose the action:\n 1. Withdraw\n 2. Logout\n"
+    puts "\nChoose the action:\n 1. Withdraw\n 2. Display Balance\n 3. Logout\n"
     action = gets.to_i
     if action == 1
       withdraw
     elsif action == 2
+      display_balance
+    elsif action == 3
       logout
     else
       puts 'Unkown command! Try again'
@@ -61,14 +63,14 @@ def withdraw
     if @balance_int-@cash < 0
       puts 'Not enough money!'
     elsif @sum_of_banknotes < @cash
-      puts "Sorry,this terminal has maximum #{@sum_of_banknotes}$"
+      puts "Sorry,this terminal has maximum #{}#{@sum_of_banknotes}"
     elsif @cash <= 0
       puts "You can't withdraw 0 or less..."
     else
       @sum_of_banknotes -= @cash
       @balance_int -= @cash
       @hash['accounts'][@n]['balance'] = @balance_int
-      puts "Now,your balance is #{@balance_int}$"
+      puts "Now,your balance is $#{@balance_int}"
     end
 end
 
@@ -78,6 +80,10 @@ def logout
   end
   puts 'Goodbye!!!'
   @check = 1
+end
+
+def display_balance
+  puts "\nYour Current Balance is $#{@balance_int}"
 end
 
 authorization

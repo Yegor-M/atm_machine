@@ -13,7 +13,7 @@ accounts:
   1:
     user: Yegor
     password: pass
-    balance: 5400
+    balance: 2726
   2:
     user: Michael
     password: lokolo
