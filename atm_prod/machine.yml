@@ -1,6 +1,6 @@
 ---
 banknotes:
-  500: 3
+  500: 2
   200: 0
   100: 2
   50: 1
@@ -13,7 +13,7 @@ accounts:
   1:
     user: Yegor
     password: pass
-    balance: 1350
+    balance: 5400
   2:
     user: Michael
     password: lokolo
