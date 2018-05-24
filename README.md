@@ -1,3 +1,2 @@
-# Atm Machine
-Pivorak task 
+Bank Application
 ruby-2.4.1
